@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-import sklearn
+#import sklearn
 import pickle
 
 st.title("Car price Prediction App")
