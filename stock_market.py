@@ -47,3 +47,14 @@ with col1:
 with col2:
     st.header("This plot is for price of the stock market")
     st.line_chart(hist.Close)
+
+
+# import pickle
+
+# Save a model naled lr using pickle
+with open("lr.pkl", "wb") as f:
+    pickle.dump(lr, f)
+
+#read pcikle model back to memory
+with open("lr.pkl", "rb") as f:
+    lr = pickle.load(f)
